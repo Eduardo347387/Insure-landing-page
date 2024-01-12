@@ -45,8 +45,14 @@ html {
   font-family: var(--Font-Karla);
   border: 1px solid var(--Very-Light-Gray);
   font-size: 1.5rem;
+  font-weight: 700;
   width: 50%;
   height: 4rem;
+  cursor: pointer;
+}
+.button-view:hover {
+  color: var(--Very-Dark-Violet);
+  background-color: var(--Very-Light-Gray);
 }
 
 .container .header {
@@ -111,6 +117,13 @@ html {
 .container .header .menu .option:nth-child(4) {
   border: 1px solid var(--Very-Light-Gray);
   padding: 1rem 8rem;
+}
+.container .header .menu .option:hover .path {
+  color: #000;
+}
+.container .header .menu .option:hover:nth-child(4) {
+  cursor: pointer;
+  background-color: var(--Very-Light-Gray);
 }
 .container .header .ver {
   display: flex;
@@ -269,6 +282,9 @@ html {
        column-gap: 1.4rem;
   margin-top: 2.5rem;
 }
+.container footer .footer-header .seccion-social-media img:hover {
+  filter: brightness(0);
+}
 .container footer .footer-header::after {
   content: "";
   position: absolute;
@@ -306,6 +322,10 @@ html {
   font-size: 1.1rem;
   font-weight: 700;
   margin-top: 0.6rem;
+}
+.container footer .footer-seccion-container .footer-seccion .paragraph:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 @media (min-width: 550px) {
@@ -346,6 +366,12 @@ html {
   }
   .container .header .menu .option:nth-child(4) .path {
     color: var(--Very-Dark-Violet);
+  }
+  .container .header .menu .option:hover:nth-child(4) {
+    background-color: var(--Very-Dark-Violet);
+  }
+  .container .header .menu .option:hover:nth-child(4) .path {
+    color: var(--Very-Light-Gray);
   }
   .container .header .hamburguesa {
     display: none;
@@ -460,7 +486,7 @@ html {
          column-gap: 8rem;
     background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
     background-size: contain;
-    background-position: right;
+    background-position: vright;
   }
   .container .target-footer .title {
     text-align: left;
@@ -567,6 +593,12 @@ html {
   }
   .container .container-seccion-intro .seccion-intro .button-view {
     width: 20rem;
+  }
+  .container footer .footer-seccion-container .footer-seccion .list-title {
+    font-size: 1.6rem;
+  }
+  .container footer .footer-seccion-container .footer-seccion .paragraph {
+    font-size: 1.4rem;
   }
 }
 @media (min-width: 1366px) {
